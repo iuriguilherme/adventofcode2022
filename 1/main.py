@@ -13,4 +13,6 @@ top: int = max(calories)
 
 print(f"""The elf carrying most calories is elf \
 #{elfs[calories.index(top)]} which is \
-carrying {top} calories""")
+carrying {top} calories.
+The sum of the calories carried by the three elves which are carrying more \
+calories is {sum(sorted(calories, reverse = True)[:3])}""")
